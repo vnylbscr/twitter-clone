@@ -15,6 +15,7 @@ const BottomProfile = () => {
             </div>
             <div className="pr-4">
                 <DotMenuIcon className="w-7 h-7 text-primary-darkgray" />
+                
             </div>
         </div>
     )
