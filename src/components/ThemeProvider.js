@@ -12,6 +12,7 @@ const ThemeProvider = ({ children }) => {
             }}
         >
             {children}
+            
         </MyThemeContext.Provider>
     )
 }
