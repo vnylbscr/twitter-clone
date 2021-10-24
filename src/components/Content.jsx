@@ -154,12 +154,13 @@ const Content = () => {
                 )}
               </div>
               <button
+              disabled={tweet.trim().length === 0}
                 className={`${
-                  tweet
+                  tweet.trim().length > 0
                     ? "bg-primary-blue-base hover:bg-primary-blue-dark rounded-full mr-4 focus:outline-none w-1/6 h-3/6 mb-4 text-white text-l font-bold"
                     : "bg-primary-blue-base opacity-40 rounded-full mr-4 w-1/6 h-3/6 mb-4 text-white text-l font-bold focus:outline-none pointer-events-none"
                 }`}
-                onClick={() => saveTweetToFirestore()}
+                onClick={saveTweetToFirestore}
               >
                 Tweet
               </button>
